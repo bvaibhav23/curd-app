@@ -17,6 +17,7 @@ const InputFrom = ({ product, setFrom }) => {
 
     return (
         <form onSubmit={handleSubmit} className='from-Container'>
+            <h2>Product Update</h2>
             <label>
                 Title:
                 <input type="text" value={title} onChange={event => { setTitle(event.target.value) }} />
