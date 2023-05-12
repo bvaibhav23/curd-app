@@ -10,7 +10,7 @@ const InputFrom = ({ product, setFrom }) => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        const updatedProduct = { ...product, title, price: price };
+        const updatedProduct = { ...product, "title": title, "price": price };
         updateProduct(product.id, updatedProduct);
         setFrom(false);
     };
