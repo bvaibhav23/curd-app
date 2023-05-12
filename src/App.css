@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.from-Container {
+  position: absolute;
+  top: 100;
+  margin-top: 50px;
+  width: 50vh;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
+input {
+  padding: 5px;
+  margin: 5px;
+  border: none;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+img {
+  width: 40vh;
+  height: 30vh;
+}
+.product {
+  display: flex;
+  flex-direction: column;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: 1px solid black;
+  margin: 1.5rem;
+  padding: 1rem;
+  width: 40vh;
+}
+li {
+  list-style: none;
+  display: inline-flex;
+  margin: 0.5rem;
+}
+.numBtn {
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 0.2rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+.numBtn:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+.cardBtn {
+  width: 4rem;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  border: none;
+  background-color: lightslategrey;
+  color: azure;
+}
+.cardBtn:hover {
+  background-color: rgb(99, 112, 125);
+  cursor: pointer;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
 }
